@@ -17,4 +17,23 @@ button {
   cursor: pointer;
 }
 button:hover { background: #cf5940; }
+
 #result { font-size: 24px; font-weight: bold; margin-top: 32px; }
+
+#result.pop {
+  animation: pop 0.5s ease-out;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
